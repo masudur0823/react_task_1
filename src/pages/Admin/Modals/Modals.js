@@ -3,7 +3,28 @@ import { Button, Col, Modal, Row } from 'react-bootstrap'
 
 function Modals(props) {
   const handleShortAns = () =>{
-    
+    const close = props.onHide;
+    close();
+  }
+  const handleLongAns = () =>{
+    const close = props.onHide;
+    close();
+  }
+  const handleMultipleChoice = () =>{
+    const close = props.onHide;
+    close();
+  }
+  const handleText = () =>{
+    const close = props.onHide;
+    close();
+  }
+  const handleTrueFalse = () =>{
+    const close = props.onHide;
+    close();
+  }
+  const handleMultipleAnswer = () =>{
+    const close = props.onHide;
+    close();
   }
 
   return (
@@ -22,32 +43,32 @@ function Modals(props) {
         <Modal.Body>
           <Row className='text-center g-4 m-0'>
             <Col md="4">
-              <div className='border p-3' style={{cursor:'pointer'}} onClick={{handleShortAns}}>
+              <div className='border p-3' style={{cursor:'pointer'}} onClick={handleShortAns}>
                   Short Answer
               </div>
             </Col>
             <Col md="4">
-              <div className='border p-3' style={{cursor:'pointer'}}>
+              <div className='border p-3' style={{cursor:'pointer'}} onClick={handleLongAns}>
                   Long Answer
               </div>
             </Col>
             <Col md="4">
-              <div className='border p-3' style={{cursor:'pointer'}}>
+              <div className='border p-3' style={{cursor:'pointer'}} onClick={handleMultipleChoice}>
                   Multiple Choice
               </div>
             </Col>
             <Col md="4">
-              <div className='border p-3' style={{cursor:'pointer'}}>
+              <div className='border p-3' style={{cursor:'pointer'}} onClick={handleText}>
                   Text
               </div>
             </Col>
             <Col md="4">
-              <div className='border p-3' style={{cursor:'pointer'}}>
+              <div className='border p-3' style={{cursor:'pointer'}} onClick={handleTrueFalse}>
                   True / False
               </div>
             </Col>
             <Col md="4">
-              <div className='border p-3' style={{cursor:'pointer'}}>
+              <div className='border p-3' style={{cursor:'pointer'}} onClick={handleMultipleAnswer}>
                   Multiple Answers
               </div>
             </Col>
